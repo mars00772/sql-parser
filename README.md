@@ -2,15 +2,21 @@
 
 SQLite dialect SQL parser written in Python. Based on the ANTLR4 grammar by Bart Kiers.
 
+## Input
+
 ```
-Input: cat input.txt
+cat input.txt
 
 SELECT log AS x FROM t1
 GROUP BY x
 HAVING count(*) >= 4
 ORDER BY max(n) + 0
+```
 
-Output: ./Test.py input.txt
+## Output
+
+```
+./Test.py input.txt
 
 (parse (sql_stmt_list (sql_stmt (factored_select_stmt 
 (select_core SELECT (result_column (expr (column_name (any_name log))) AS (column_alias x)) 
