@@ -1,6 +1,6 @@
-# SQLite Parser
+# SQL Parser
 
-SQLite Parser written in Python. Based on the ANTLR4 grammar by Bart Kiers.
+SQLite dialect SQL parser written in Python. Based on the ANTLR4 grammar by Bart Kiers.
 
 ```
 ubuntu@~/git/sqlite-parser ∴ ./Test.py input.txt
